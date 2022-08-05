@@ -224,6 +224,40 @@ article.articulo_video_2 {
 
 /* Fin estilo Index */
 
+/* Estilo Galería */
+
+main div.texto_galeria {
+   color: white;
+   font-family: 'montserrat', sans-serif;
+   font-size: 25px;
+   margin: 100px 70px 100px 70px;
+   text-align: center;
+}
+
+main section {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: 30px;
+}
+
+main section .article_galeria a img {
+   width: 600px;
+   height: 340px;
+   margin: 5px;
+   padding: 2px;
+}
+
+main section .article_galeria a:hover img {
+   /*width: 660px;
+   height: 374px;
+}*/
+
+background-color: blueviolet;
+}
+
+/* Fin Estilo Galería */
+
 /* Estilo nosotros */
 main.nosotros {
    background-image: url(../Imagenes/fondo-nosotros1.jpg);
@@ -417,6 +451,14 @@ main.contacto form input, #mensaje {
 
    /* Fin MQ 1200px Index */
 
+   /* MQ 1200px Galería */
+
+   main div.texto_galeria h1 {
+      font-size: 25px;
+   }
+
+   /* Fin MQ 1200px Galería */
+
    /* MQ 1200px Nosotros */
 
    main.nosotros h1 {
@@ -454,6 +496,26 @@ main.contacto form input, #mensaje {
 
 }
 
+@media (max-width: 720px) {
+
+   /* MQ 720px Galería */
+
+   main section .article_galeria a img {
+      width: 80vw;
+      height: 45vw;
+      min-width: 300px;
+      min-height: 170px;
+
+   }
+
+   main div.texto_galeria {
+      margin: 50px 35px 50px 35px;
+   }
+
+   /* Fin MQ 720px Galería */
+
+}
+
 @media (max-width: 540px) {
 
    /* MQ 530px Index */
@@ -471,6 +533,14 @@ main.contacto form input, #mensaje {
    }
 
    /* Fin MQ 530px Index */
+
+   /* MQ 530px Galería */
+
+   main div.texto_galeria h1 {
+      font-size: 20px;
+   }
+
+   /* Fin MQ 530px Galería */
    
    /* MQ 530px Nosotros */
 
